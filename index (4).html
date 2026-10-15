@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>Sky Bounce</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="c"></canvas>
+
+<div id="hud" class="hide">
+  <div>🏁 <span id="d">0 m</span></div>
+  <div>⭐ <span id="s">0</span></div>
+  <div>🪙 <span id="k">0</span></div>
+  <div id="bar"><div id="e"></div></div>
+</div>
+
+<section id="menu" class="ov">
+  <h1 id="title">Sky Bounce</h1>
+  <p>Lanza al narval, rebota en las nubes y llega lo más lejos posible.</p>
+  <button id="play">¡Jugar!</button>
+  <div class="st"><div>Récord<b><span id="best">0</span> m</b></div><div>Monedas<b>🪙 <span id="coins">0</span></b></div></div>
+  <div id="shop"></div>
+  <small class="tip">Toca o pulsa Espacio para lanzar. Mantén pulsado para impulsarte.</small>
+</section>
+
+<section id="over" class="ov hide">
+  <h2 id="otitle">¡Fin del vuelo!</h2>
+  <div class="st">
+    <div>Distancia<b id="od">0 m</b></div><div>Puntos<b id="os">0</b></div>
+    <div>Monedas<b id="ok">0</b></div><div>Récord<b id="ob">0 m</b></div>
+  </div>
+  <button id="retry">Volver a jugar</button>
+  <button id="tomenu" class="alt">Mejoras y menú</button>
+</section>
+
+<script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+*{box-sizing:border-box;margin:0}
+html,body{height:100%;overflow:hidden;background:#2a7fff;font-family:"Trebuchet MS","Arial Rounded MT Bold",system-ui,sans-serif;color:#fff;user-select:none;-webkit-user-select:none;touch-action:none}
+#c{position:fixed;inset:0;width:100%;height:100%;display:block}
+.hide{display:none!important}
+#hud{position:fixed;top:max(10px,env(safe-area-inset-top));left:12px;right:12px;display:flex;gap:10px;align-items:center;pointer-events:none;font-weight:900;text-shadow:0 2px 0 rgba(0,0,0,.25)}
+#hud>div{background:rgba(20,50,120,.45);border-radius:14px;padding:6px 14px;font-size:clamp(14px,3.5vw,22px)}
+#bar{flex:1;height:20px;padding:0!important;overflow:hidden;border:3px solid #fff}
+#e{height:100%;width:100%;background:linear-gradient(#ffe45c,#ff9f1c)}
+.ov{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:16px;background:rgba(15,40,110,.35);text-align:center;overflow:auto}
+h1{font-size:clamp(44px,11vw,96px);line-height:1;letter-spacing:2px;text-shadow:0 5px 0 #1c5fc4,0 10px 0 rgba(0,0,0,.2)}
+h2{font-size:clamp(30px,7vw,52px);text-shadow:0 4px 0 #1c5fc4}
+button{font:inherit;font-weight:900;color:#fff;border:0;border-bottom:6px solid #c46a00;background:linear-gradient(#ffc04d,#ff8a1f);border-radius:22px;padding:14px 34px;font-size:clamp(20px,5vw,30px);cursor:pointer;touch-action:manipulation}
+button:active{transform:translateY(4px);border-bottom-width:2px}
+button.alt{background:linear-gradient(#6ec5ff,#2f86dd);border-bottom-color:#1c5fc4;font-size:clamp(16px,4vw,22px)}
+button:focus-visible{outline:4px solid #fff;outline-offset:3px}
+#shop{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.up{display:flex;flex-direction:column;gap:2px;font-size:16px!important;padding:10px 16px!important;min-width:140px}
+.up small{font-weight:400}
+.up:disabled{filter:grayscale(.8);opacity:.7;cursor:default}
+.st{display:grid;grid-template-columns:repeat(2,minmax(120px,1fr));gap:8px;font-size:clamp(16px,4vw,22px)}
+.st div{background:rgba(20,50,120,.5);border-radius:14px;padding:8px 14px}
+.st b{display:block;font-size:1.5em}
+.tip{opacity:.9}
